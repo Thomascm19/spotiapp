@@ -18,6 +18,7 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 
 //Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 
 
@@ -33,7 +34,8 @@ import { NoimagePipe } from './pipes/noimage.pipe';
     ArtistaComponent,
     NavbarComponent,
     NoimagePipe,
-    TarjetasComponent
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
 
