@@ -16,9 +16,6 @@ const headers = new HttpHeaders({
   'Authorization':'Bearer BQCjnSmGemHW8w2YJwW8s5OUjCztV7kw4RgRg2tfPHNVTpSpYzKlxadoJBxe_e8KHATKX9S-nWEIIi7E4Lw'
 });
 
-      this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20',{headers})
-        .subscribe(data =>{
-          console.log(data);
-        });
+      return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20',{headers});
    }
 }
