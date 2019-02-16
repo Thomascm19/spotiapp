@@ -8,21 +8,19 @@ import { Router } from '@angular/router';
 })
 export class TarjetasComponent {
 
-  @Input() items:any [] = [];
+  @Input() items: any [] = [];
 
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
-  verArtista(item:any){
+  verArtista(item: any) {
     let artistaId;
-
-
-    if (item.type === 'artist'){
+    if (item.type === 'artist') {
       artistaId = item.id;
     } else {
       artistaId = item.artists[0].id;
     }
-    this.router.navigate(['/artist',artistaId])
+    this.router.navigate(['/artist', artistaId]);
   }
 
 
