@@ -44,7 +44,7 @@ import { DomseguroPipe } from './pipes/domseguro.pipe';
 
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, {useHash: true})
+    RouterModule.forRoot(ROUTES, { useHash: true, relativeLinkResolution: 'legacy' })
   ],
   providers: [
   ],
